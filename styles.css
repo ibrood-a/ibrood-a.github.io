@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* A light grayish background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* A soft black text color */
+}
+
+header {
+    background-color: #55a7d9; /* A light blue background for the header */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    background-color: #55a7d9;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444; /* Dark grey text color */
+    font-weight: bold; /* Make the text bold */
+    font-size: 24px; /* Increase the font size */
+}
+
+nav a:hover {
+    color: #fff; /* Change text color to white on hover */
+}
+
+main {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc; /* A subtle box shadow for a card-like appearance */
+}
+
+.content {
+    display: flex;
+}
+
+.blog-post {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.comments {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.comment {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#comment-text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100px;
+    background-color: #55a7d9;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #55a7d9; /* Matching footer background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: #333; /* A soft black for the post title */
+}
+
+h2 {
+    color: #55a7d9; /* A light blue for section headings */
+}

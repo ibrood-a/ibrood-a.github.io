@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ibrood-a's blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <article class="blog-post">
+                <h1>My Exploration of GitHub Profile</h1>
+                <p>Published on: October 10, 2023</p>
+                
+                <p>As a computer science major working towards my degree, I am always eager to learn and explore the work of fellow programmers. I recently came across Jacob Kennedy, who has a fascinating GitHub profile. Let's delve into some of the intriguing repositories I found on this GitHub profile:</p>
+                
+                <h3>cosc2436-lab10 (C++)</h3>
+                <p>I was immediately drawn to a C++ project. This repository likely contains code related to my coursework or personal projects in C++.</p>
+                
+                <h3>T-Mobile-price-plan-calculator (HTML)</h3>
+                <p>What caught my eye even more was a project I created to calculate T-Mobile plan pricing. This tool is designed to help me and my co-workers calculate plan prices accurately, as the tools provided by our company are often unreliable.</p>
+                
+                <h3>Ackermann-ARM-Assembly (Assembly)</h3>
+                <p>Another fascinating repository, this one is related to ARM Assembly programming. It showcases my skills in low-level programming and adds to the diversity of my GitHub work.</p>
+                
+                <h3>Guessing-Game-ARM-Assembly (Assembly)</h3>
+                <p>My curiosity led me to yet another ARM Assembly project, which appears to be a guessing game implemented in Assembly. It clearly demonstrates my expertise in creating programs in Assembly language.</p>
+                
+                <h3>Binary-Search-Tree (C++)</h3>
+                <p>I have a repository dedicated to a Binary Search Tree implemented in C++. This is an excellent example of my proficiency in data structures and algorithms, which is an area I find particularly exciting.</p>
+                
+                <h3>Radix-Sort (C++)</h3>
+                <p>Another repository focusing on Radix Sort implemented in C++. Radix Sort is a fundamental sorting algorithm, and this project highlights my skills in algorithm design and implementation.</p>
+                
+                <p>If you're passionate about computer science and programming like me, I encourage you to explore my GitHub profile further to dive into these repositories and appreciate the skills and knowledge I bring to the table.</p>
+            </article>
+            <!-- Add more articles here -->
+            
+            <aside class="comments">
+                <h2>Comments</h2>
+                <div class="comment">
+                    <p>This is an example comment.</p>
+                </div>
+                <form id="comment-form">
+                    <textarea id="comment-text" placeholder="Add your comment here..."></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </aside>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    // Get the comment form and comment text box elements
+                    const commentForm = document.getElementById("comment-form");
+                    const commentText = document.getElementById("comment-text");
+        
+                    // Get the comment section where comments will be displayed
+                    const commentSection = document.querySelector(".comments");
+        
+                    // Listen for form submission
+                    commentForm.addEventListener("submit", function(event) {
+                        event.preventDefault();
+        
+                        // Get the user's comment from the text box
+                        const userComment = commentText.value;
+        
+                        if (userComment.trim() !== "") {
+                            // Create a new comment element
+                            const newComment = document.createElement("div");
+                            newComment.classList.add("comment");
+                            newComment.innerHTML = `<p>${userComment}</p>`;
+        
+                            // Insert the new comment above the text box
+                            commentSection.insertBefore(newComment, commentText.parentElement);
+        
+                            // Clear the text box
+                            commentText.value = "";
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </main>
+    
+    <main>
+    <div class="content">
+        <article class="blog-post">
+            <h1>Example blog post #2</h1>
+            
+        </article>
+        <!-- Add more articles here -->
+        
+        <aside class="comments">
+            <h2>Comments</h2>
+            <div class="comment">
+                <p>This is an example comment.</p>
+            </div>
+        </aside>
+
+    </main>
+    <footer>
+        <p>Jacob Kennedy &copy; 2023</p>
+    </footer>
+</body>
+</html>
